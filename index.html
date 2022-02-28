@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hittman's Weather Forecast</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hittman's Weather Forecast</h1>
+        <form id="myForm" onsubmit="return false;">
+            <div class="form-group spacer">
+                <label for="city">City or U.S. Zipcode</label>
+                <input type="text" class="form-control" id="city" placeholder="Enter City Here">
+            </div>
+            <button type="button" class="btn btn-primary spacer" onclick="getTemp()">Get Weather</button>
+            <button type="button" class="btn btn-primary spacer justify-content-end" id="move-right"
+                onclick="getLocation()">Get Location</button>
+        </form>
+        <h3 id="city-title"></h3>
+        <div class="card_group">
+            <div class="card weather" id="high-card">
+                <div class="card-header">
+                    <h5 class="card-title">High</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text high-text"></p>
+                </div>
+            </div>
+            <div class="card weather" id="low-card">
+                <div class="card-header">
+                    <h5 class="card-title">Low</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text low-text"></p>
+                </div>
+            </div>
+            <div class="card weather" id="humidity-card">
+                <div class="card-header">
+                    <h5 class="card-title">Humidity</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text"></p>
+                </div>
+            </div>
+            <div class="card weather" id="forcast-card">
+                <div class="card-header">
+                    <h5 class="card-title">Forcast</h5>
+                </div>
+                <div class="card-body card--3">
+                    <div id="weather-text">
+                        <h4></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <img src=... class="img-thumbnail" id="weather-icon">
+                </div>
+            </div>
+            <div class="card weather" id="feels-card">
+                <div class="card-header">
+                    <h5 class="card-title">Feels Like</h5>
+                    <div class="card-body">
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    </script>
+</body>
+
+</html>
